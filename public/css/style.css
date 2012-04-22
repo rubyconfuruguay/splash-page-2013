@@ -1,0 +1,375 @@
+/*CSS Document - By Zimmic*/
+/*---Reset styles---*/
+html, body, div, section, nav, header, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 11px; font-family: inherit; text-decoration:none;}
+:focus {outline: 0}
+body {color: black; background: white; font-family:Arial, Helvetica, sans-serif;}
+ol, ul {list-style: none}
+table {border-collapse: collapse; border-spacing: 0}
+caption, th, td {text-align: left; font-weight: normal}
+blockquote:before, blockquote:after, q:before, q:after {content: ""}
+blockquote, q {quotes: "" ""}
+/*fonts*/
+@font-face {
+    font-family:'FORQUERegular';
+    src:url('../fonts/forque-webfont.eot');
+    src:url('../fonts/forque-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/forque-webfont.woff') format('woff'),
+        url('../fonts/forque-webfont.ttf') format('truetype'),
+        url('../fonts/forque-webfont.svg#FORQUERegular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+/*layout*/
+body{
+	background:url(../img/bkgnd.jpg) no-repeat  center 15% #2f3c42;
+}
+.langs{
+    position:fixed;
+    top:-20px;
+    left:57%;
+    border:solid 1px #666;
+    border-top:none;
+    width:66px;
+    margin-left:-33px;
+    height:40px;
+    float:left;
+    z-index:30;
+    background-color:#333;
+    -webkit-transition:top 0.3s ease,opacity 0.3s ease;
+    -moz-transition:top 0.3s ease,opacity 0.3s ease;
+    opacity:0.8;
+}
+.langs:hover{
+    top:0;
+    opacity:1;
+}
+.langs strong{
+    float:left;
+    width:66px;
+    text-align:center;
+    font:16px/16px FORQUERegular,arial;
+    color:#fdfeff;
+    cursor:pointer;
+}
+.langs a,.langs span{
+    float:left;
+    width:24px;
+    height:15px;
+    display:block;
+    background:url(../img/icons.png) no-repeat 0 -250px;
+    margin:5px 0 3px 6px;
+}
+.langs span{
+    opacity:0.4;
+}
+.langs a{
+    background-position:0 -225px;
+}
+.langs.es span{
+    background-position:0 -225px;
+}
+.langs.es a{
+    background-position:0 -250px;
+}
+div.wrapper{
+	width:100%;
+	background:url(../img/register-bgnd.jpg) no-repeat right bottom;
+	height:619px;
+}
+div.center{
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+div.main{
+	width:980px;
+	float:left;
+	position:relative;
+}
+div.main div.left{
+    float:left;
+    margin:43px 0 0 174px;
+    width:356px;
+}
+h1{
+	float:left;
+    height:173px;
+    margin:46px 0 0 42px;
+    width:255px;
+}
+a.logo{
+	background:url(../img/logo.png) no-repeat 0 0;
+	display:block;
+    height:173px;
+    width:255px;
+    float:left;
+    text-indent:-9999px;
+}
+div.counter{
+    float:left;
+    margin:28px 0 0;
+    width:350px;
+}
+div.counter h2{
+    color:#CACBCD;
+    float:left;
+    height:43px;
+    margin:0 0 0 4px;
+}
+div.counter h2 span{
+    display:block;
+    float:left;
+    font:43px/43px FORQUERegular,arial;
+    letter-spacing:2px;
+}
+.es div.counter h2 span{
+    text-align:center;
+    width:333px;
+}
+div.counter h2 sup{
+    display:block;
+    float:left;
+    font:26px/26px FORQUERegular,arial;
+    margin:0 13px 0 0;
+}
+div.counter ul{
+    background-color:#7F878A;
+    float:left;
+    height:95px;
+    margin:3px 0 0 4px;
+    width:333px;
+}
+div.counter ul li{
+	float:left;
+    margin:0 4px 0 16px;
+}
+div.counter ul li.lst{
+    margin:0 0 0 11px;
+}
+div.counter ul li span{
+    color:#FFF;
+    display:block;
+    font:19px/19px FORQUERegular,arial;
+    height:15px;
+    margin:16px 0 7px;
+    text-align:center;
+}
+div.counter ul li strong{
+    background-color:#4E4F53;
+    color:#FFF;
+    display:block;
+    font:27px/49px FORQUERegular,arial;
+    height:43px;
+    text-align:center;
+    width:61px;
+}
+div.ufo{
+    float:left;
+    margin:87px 0 0;
+    position:relative;
+    width:430px;
+    z-index:10;
+}
+div.ufo img.ruby{
+    position:absolute;
+    left:154px;
+    top:0;
+    z-index:20;
+}
+div.ufo img.light{
+    left:10px;
+    position:absolute;
+    top:171px;
+    z-index:20;
+    opacity:0;
+}
+div.participants{
+    background:url(../img/guys.png) no-repeat -107px 49px;
+    float:left;
+    height:242px;
+    position:absolute;
+    right:134px;
+    top:397px;
+    width:107px;
+    z-index:20;
+}
+div.participants.speaker{
+    background-position:0 49px;
+}
+div.participants span{
+    background:url(../img/guys.png) no-repeat -218px -195px;
+    float:left;
+    height:185px;
+    right:174px;
+    width:105px;
+    display:block;
+    opacity:0;
+}
+div.participants.speaker span{
+    background-position:-6px -195px;
+}
+div.participants.sponsor span{
+    background-position:-111px -195px;
+}
+div.register{
+	float:left;
+	width:100%;
+	min-width:980px;
+	margin:40px 0 0;
+}
+div.register ul{
+	float:left;
+	width:35.6%;
+	margin:10px 0 0;
+}
+div.register ul li{
+	float:left;
+	width:100%;
+	background-color:#982329;
+	height:46px;
+    margin:0 0 5px;
+}
+div.register ul li.active{
+	background-color:#406b8d;
+}
+div.register ul li a{
+    color:#FFF;
+    display:block;
+    font:26px/26px FORQUERegular,arial;
+    height:33px;
+    letter-spacing:1px;
+    padding:13px 39px 0 0;
+    text-align:right;
+    text-shadow:0 -1px 0 #811e23;
+    float:right;
+    background:url(../img/icons.png) no-repeat right 10px;
+    width:165px;
+    opacity:0.4;
+    -webkit-transition:opacity 0.5s ease;
+    -moz-transition:opacity 0.5s ease;
+}
+div.register ul li.atendee a{
+    background-position:right -34px;
+}
+div.register ul li.sponsor a{
+    background-position:right -79px;
+}
+div.register ul li.active a{
+    text-shadow:0 -1px 0 #375c79;
+    opacity:1;
+}
+div.register ul li:hover a{
+    opacity:1;
+}
+div.register ul li a small{
+    font:20px/20px FORQUERegular,arial;
+    margin:0 3px 0 0;
+}
+div.register span.rotate{
+    -webkit-transform:skew(-180deg, -18deg) ;
+    -moz-transform:skew(-180deg, -18deg) ;
+    -o-transform:skew(-180deg, -18deg) ;
+    background-color:#4880AF;
+    display:block;
+    float:left;
+    height:148px;
+    margin:5px 0 0;
+    width:30px;
+}
+div.register div.regContent{
+    background-color:#416C8E;
+    float:left;
+    height:148px;
+    margin:0 0 0 -1px;
+    width:60%;
+    position:relative;
+}
+div.register div.regContent.atendee .speakerLink,div.register div.regContent.atendee .sponsorLink{
+    display:none;
+}
+div.register div.regContent.speaker .atendeeForm,div.register div.regContent.speaker .sponsorLink{
+    display:none;
+}
+div.register div.regContent.sponsor .atendeeForm,div.register div.regContent.sponsor .speakerLink{
+    display:none;
+}
+div.register div.regContent.sponsor a,
+div.register div.regContent.speaker a{
+    color:#FFF;
+    float:left;
+    font:26px/26px FORQUERegular,arial;
+    height:26px;
+    margin:58px 0 0 50px;
+    padding:7px 0 0 45px;
+    position:relative;
+    z-index:10;
+    background:url(../img/icons.png) no-repeat 0 -136px;
+}
+div.register div.regContent.speaker a{
+    background-position:0 -178px;
+    height:30px;
+    margin:56px 0 0 50px;
+    padding:9px 0 0 45px;
+}
+div.register div.atendeeForm{
+    float:left;
+    height:148px;
+    width:100%;
+    position:relative;
+    z-index:10;
+}
+div.register div.atendeeForm label{
+    color:#FFF;
+    float:left;
+    font:33px/33px FORQUERegular,arial;
+    height:30px;
+    margin:62px 0 0 30px;
+}
+div.register div.atendeeForm input{
+    background-color:#2D4253;
+    border:none;
+    color:#FFF;
+    float:left;
+    font:23px/23px arial;
+    height:39px;
+    padding:2px 10px 0;
+    margin:56px 0 0 11px;
+    width:188px;
+}
+div.register div.atendeeForm a.submit{
+    background-color:#E4E9EF;
+    border:2px solid #B8CAD6;
+    border-top:1px solid #B8CAD6;
+    border-bottom:3px solid #B8CAD6;
+    color:#666664;
+    display:block;
+    float:left;
+    font:20px/20px FORQUERegular,Arial;
+    height:28px;
+    margin:56px 0 0;
+    padding:9px 0 0;
+    text-align:center;
+    width:69px;
+    letter-spacing:1px;
+}
+div.register div.atendeeForm a.submit:active{
+    border-top:3px solid #B8CAD6;
+    border-bottom:1px solid #B8CAD6;
+}
+@media only screen and (max-width: 1024px){
+    div.register div.atendeeForm input{
+        font:20px/23px arial;
+        width:148px;
+        margin:65px 0 0 11px;
+        height:30px;
+    }
+    div.register div.atendeeForm label{
+        font:28px/33px FORQUERegular,arial;
+        margin:65px 0 0 30px;
+    }
+    div.register div.atendeeForm a.submit{
+        height:19px;
+        margin:65px 0 0;
+        line-height:13px;
+    }
+}
