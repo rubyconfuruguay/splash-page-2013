@@ -398,26 +398,37 @@ div.register div.atendeeForm input{
     width:188px;
 }
 
-div.register div.atendeeForm a.submit{
+div.register div.atendeeForm .submit{
     background-color:#E4E9EF;
     border:2px solid #B8CAD6;
     border-top:1px solid #B8CAD6;
     border-bottom:3px solid #B8CAD6;
     color:#666664;
-    display:block;
+    display:inline-block;
     float:left;
     font:20px/20px FORQUERegular,Arial;
-    height:28px;
+    height:41px;
+    line-height:16px;
     margin:56px 0 0;
     padding:9px 0 0;
     text-align:center;
-    width:69px;
+    width:96px;
     letter-spacing:1px;
 }
 
-div.register div.atendeeForm a.submit:active{
+div.register div.atendeeForm .submit:active{
     border-top:3px solid #B8CAD6;
     border-bottom:1px solid #B8CAD6;
+}
+
+::-webkit-input-placeholder{
+  font-size: 0.9em;
+  color: #416C8E;
+}
+
+::-moz-placeholder{
+  font-size: 0.9em;
+  color: #416C8E;
 }
 
 @media only screen and (max-width: 1024px){
@@ -433,7 +444,7 @@ div.register div.atendeeForm a.submit:active{
         margin:65px 0 0 30px;
     }
 
-    div.register div.atendeeForm a.submit{
+    div.register div.atendeeForm .submit{
         height:19px;
         margin:65px 0 0;
         line-height:13px;
