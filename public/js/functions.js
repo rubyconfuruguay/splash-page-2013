@@ -1,3 +1,14 @@
+function animation(){
+    sun_raft();
+    $(".ufo img.light").animate({opacity: '1' }, {queue:false, duration:1200, easing:'easeOutBounce'});
+    $(".participants span").animate({opacity: '1' }, {queue:false, duration:2000, easing:'easeOutBounce'});
+}
+
+function sun_raft(){
+    $(".ufo").animate({top:"-=8px"},1000).animate({top:"+=8px"}, 1000);
+    setTimeout(sun_raft, 2000);
+}
+
 $(document).ready(function () {
     $('.ufo img').plaxify()
     $.plax.enable()
@@ -36,17 +47,6 @@ $(document).ready(function () {
         },
         leadingZero: true
     });
-
-    function animation(){
-        sun_raft();
-        $(".ufo img.light").animate({opacity: '1' }, {queue:false, duration:1200, easing:'easeOutBounce'});
-        $(".participants span").animate({opacity: '1' }, {queue:false, duration:2000, easing:'easeOutBounce'});
-    }
-
-    function sun_raft(){
-        $(".ufo").animate({top:"-=8px"},1000).animate({top:"+=8px"}, 1000);
-        setTimeout("sun_raft()",2000);
-    }
 
     setTimeout(animation, 300);
 });
