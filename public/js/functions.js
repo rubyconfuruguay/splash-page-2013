@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
     $("#time1").countdown({
-        date: "2012-11-02 9:00",
+        date: "2013-03-22 9:00",
         offset: 1,
         onChange: function( event, timer ){
         },
