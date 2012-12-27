@@ -32,7 +32,8 @@ $(document).ready(function () {
     });
 
     $("#time1").countdown({
-        date: "2013-03-22 9:00",
+        htmlTemplate: "<li><span class=\"cd-time\">days</span> <strong>%d</strong></li> <li><span class=\"cd-time\">hours</span> <strong>%h</strong></li> <li><span class=\"cd-time\">mins</span> <strong>%i</strong></li> <li><span class=\"cd-time\">sec</span> <strong>%s</strong></li>",
+        date: "03/22/2013 09:00:00",
         offset: 1,
         onChange: function( event, timer ){
         },
@@ -45,6 +46,8 @@ $(document).ready(function () {
         onResume: function( event ){
             $(this).html("Resumed");
         },
+        hoursOnly: false,
+        minsOnly: false,
         leadingZero: true
     });
 
