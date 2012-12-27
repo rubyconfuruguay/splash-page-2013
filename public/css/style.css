@@ -249,7 +249,7 @@ div.participants.speaker span{
     background-position:-6px -195px;
 }
 
-div.participants.sponsor span{
+div.participants.package span{
     background-position:-111px -195px;
 }
 
@@ -299,7 +299,7 @@ div.register ul li.atendee a{
     background-position:right -34px;
 }
 
-div.register ul li.sponsor a{
+div.register ul li.package a{
     background-position:right -79px;
 }
 
@@ -338,19 +338,19 @@ div.register div.regContent{
     position:relative;
 }
 
-div.register div.regContent.atendee .speakerLink,div.register div.regContent.atendee .sponsorLink{
+div.register div.regContent.atendee .speakerLink,div.register div.regContent.atendee .packageLink{
     display:none;
 }
 
-div.register div.regContent.speaker .atendeeForm,div.register div.regContent.speaker .sponsorLink{
+div.register div.regContent.speaker .atendeeForm,div.register div.regContent.speaker .packageLink{
     display:none;
 }
 
-div.register div.regContent.sponsor .atendeeForm,div.register div.regContent.sponsor .speakerLink{
+div.register div.regContent.package .atendeeForm,div.register div.regContent.package .speakerLink{
     display:none;
 }
 
-div.register div.regContent.sponsor a,
+div.register div.regContent.package a,
 div.register div.regContent.speaker a{
     color:#FFF;
     float:left;

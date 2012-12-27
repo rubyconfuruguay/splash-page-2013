@@ -26,6 +26,13 @@ $(document).ready(function () {
             $('.participants span').animate({opacity: '1' }, {queue:false, duration:1200, easing:'easeOutBounce'});
             $(".ufo img.light").animate({opacity: '1' }, {queue:false, duration:1200, easing:'easeOutBounce'});
             $('.regContent').addClass(selectedItem);
+            $('.regContent').find("div").css('display', 'none');
+            var selectedItemLink = selectedItem + "Link";
+
+            if (selectedItem === "atendee") {
+                selectedItemLink = selectedItem + "Form";
+            }
+            $('.regContent').find("." + selectedItemLink).css('display', 'block');
             $('.regContent').removeClass(class2clear);
             return false;
         }
