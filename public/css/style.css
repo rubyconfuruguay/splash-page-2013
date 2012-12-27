@@ -31,6 +31,7 @@ blockquote, q {quotes: "" ""}
 /*layout*/
 body{
     background:url(../img/bkgnd.jpg) no-repeat  center 15% #2f3c42;
+    overflow-y: scroll;
 }
 
 .langs{
